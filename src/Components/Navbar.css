@@ -1,0 +1,16 @@
+.navbar {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 4px;
+  margin-right: 18px;
+}
+
+.navbar .nav-link:hover {
+  background: #251c1cff;
+  color: #98183eff !important;
+}

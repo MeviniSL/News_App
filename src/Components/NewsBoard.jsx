@@ -12,8 +12,9 @@ const NewsBoard = ({category}) => {
 
     },[category])
   return (
-    <div>
-     <h1 className="text-center" style={{ color: "#00bfff" }}>Welcome to Latest<br/><span className="badge bg-danger">News</span></h1>
+    <div className="newsboard">
+     <h1 className="text-center" style={{ color: "#00bfff",fontSize:"68px",fontWeight:"bold" }}>Welcome to Latest<br/><span className="badge bg-danger">News</span></h1>
+     <div className="content-area" style={{color:"black",textAlign:"center",fontSize:"20px",backgroundColor:"red"}}><p className="header" style={{fontWeight:"bold",fontSize:"54px"}}><i>Stay informed with the latest updates from around the world</i></p>anytime, anywhere. From breaking headlines to trending stories, NewsNow brings you fast, reliable, and personalized news that matters most to you.</div>
      {articles.map((NewsBoard,index)=>{
         return <NewsItem key={index} title={NewsBoard.title} description={NewsBoard.description} src={NewsBoard.urlToImage} url={NewsBoard.url} />
 
